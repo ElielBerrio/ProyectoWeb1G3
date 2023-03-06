@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo Datalist, Combobox y FieldSet</title>
+</head>
+<body>
+    
+    <h1>Ejemplo Datalist, Combobox y FieldSet</h1>
+
+        <fieldset>
+            <form action="">
+            <h2>ComboBox</h2>
+            <select>
+                  <option value="" selected disabled >-- Seleccione un valor --</option>
+                  <option value="ft">Futbol</option>
+                  <option value="kt">Karate</option>
+                  <option value="bb">Beisbol</option>
+            </select>
+    
+    
+            <h2>ComboBox Agrupado</h2>
+           
+             <select>
+                <option value="" selected disabled>-- Seleccionar --</option>
+                <optgroup label="Sistemas Operativos" >
+                    <option value="wd">Windows</option>
+                    <option value="lx">GNU/Linux</option>
+                    <option value="mo">Mac Os</option>
+                </optgroup>
+                <optgroup label="Navegadores (Browsers)" >
+                    <option value="ch">Chrome</option>
+                    <option value="op">Opera</option>
+                    <option value="eg">Edge</option>
+                </optgroup>
+             </select>
+            
+        </fieldset>
+
+        <br>
+ 
+    <fieldset>
+    <legend>Datalist</legend>
+
+    <h2> Datalist (Lista incremental)</h2>
+
+    <datalist id="lista">
+    <option value="MySQL"></option>
+    <option value="Oracle"></option>
+    <option value="POstgresql"></option>
+    <option value="MS Server"></option>
+    </datalist>
+
+    <input type="text" list="lista" placeholder="Escoga una opción">
+    </fieldset>
+
+    <h2>Textarea</h2>
+
+    <textarea name="" id="" cols="30" rows="10" placeholder="Cuentame de ti"></textarea>
+
+    <h2>Expresiones regulares</h2>
+
+
+    <input type="text" pattern="[a-zA-ZñÑ]*">
+
+    <input type="submit" value="Enviar datos al servidor">
+
+    </form>
+</body>
+</html>
