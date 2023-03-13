@@ -1,0 +1,32 @@
+body {
+    background-color: darkgrey;
+}
+
+img {
+    width: 300px;
+    height: 300px;
+}
+
+span {
+    color: red;
+}
+
+h1, h2, p {
+    text-align: center;
+}
+
+h1 span {
+    color: white;
+}
+
+.destacado {
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#unico {
+    text-align: center;
+    color: azure;
+}
