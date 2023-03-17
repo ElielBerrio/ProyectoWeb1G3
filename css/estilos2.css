@@ -1,26 +1,86 @@
+h1 {
+    margin-top: 0;
+}
+
+:root {
+    --rojo : #b01324 ;
+    --naranja : #f92c33;
+    --azul : #402687;
+
+}
+
 #colorUno {
-    background-color: #b01324;
+    background-color: var(--rojo);
 }
 
 #colorDos {
-    background-color: #f92c33;
+    background-color: var(--naranja);
 }
 
 #colorTres {
-    background-color: #402687;
+    background-color: var(--azul);
 }
 
 #encabezado {
     font-size: 80px;
     color: white;
-    background-color: #b01324;
+    background-color: var(--rojo);
     text-align: center;
 }
 
 #cuerpo {
-    background-color: #f92c33;
+    background-color: var(--naranja);
 }
 
 #cuadro {
-    background-color: #402687;
+    background-color: var(--azul);
 }
+
+.flexContenedor {
+    
+    display: flex;
+
+}
+
+.divIzquierdo {
+    
+    width: 40%;
+}
+
+.divDerecho {
+    background-color: var(--azul);
+    width: 50%;
+    text-align: center;
+    height: 500px;
+}
+
+.colorLetra {
+    color: white;
+}
+
+.button {
+    background-color: #ddd;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+  }
+  
+  .button:hover {
+    background-color: #f1f1f1;
+  }
+
+
+  .colorBotonIzquierdo {
+    background: rgb(246,34,50);
+    background: linear-gradient(90deg, rgba(246,34,50,1) 0%, rgba(253,132,31,1) 100%);
+  }
+
+  .colorBotonDerecho {
+    background-color: #5665f0;
+  }

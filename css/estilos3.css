@@ -1,0 +1,15 @@
+.flexContenedor {
+    display: flex;
+    background-color: aqua;
+
+}
+
+.flexContenedor > div {
+    width: 50%;
+}
+
+.flexContenedorJustificadoDerecha {
+    display: flex;
+    justify-content: right;
+    padding-right: 30px;
+}
