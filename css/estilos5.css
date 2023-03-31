@@ -1,0 +1,40 @@
+body {
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+.flexcontenedorQuiz {
+    display: flex;
+}
+
+
+.divIzquierdoArriba {
+    width: 25%;
+}
+
+.divDerechoArriba {
+    width: 75%;
+}
+
+.configNav {
+    background-color: rgb(26, 26, 61);
+    padding-left: 10px;
+}
+
+nav {
+    color: white;
+}
+
+select {
+    background-color: rgb(26, 26, 61);
+    color: white;
+}
+
+.divIzquierdoTitulo {
+    width: 55%;
+    padding-left: 25px;
+}
+
+.divDerechoTitulo {
+    width: 45%;
+}

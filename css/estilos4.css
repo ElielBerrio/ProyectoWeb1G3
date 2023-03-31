@@ -1,0 +1,33 @@
+
+.FlexContener {
+    display: flex;
+}
+
+.DivIzquierdo {
+    width: 60%;
+}
+
+.DivDerecho {
+    width: 40%;
+}
+
+.divIzquierdoHijo {
+    width: 30%;
+}
+
+.divDerechoHijo {
+    width: 70%;
+}
+
+.flexContenedorBackEnd {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flexContenedorBackEnd > div {
+    text-align: center;
+}
+
+.divIzquierdoFinal {
+    padding-left: 20px;
+}
