@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+}
+
+.flexContenedorejercicioParcial {
+    display: flex;
+}
+
+.divIzquierdoEjercicioParcial {
+    width: 15%;
+}
+
+.divCentroEjercicioParcial {
+    width: 70%;
+}
+
+.divDerechoEjercicioParcial {
+    width: 15%;
+}
+
+.colorEspecial1 {
+    background-color: darkred;
+    color: white;
+}
+
+.colorEspecial2 {
+    background-color: darkgray;
+    color: white;
+}
+
