@@ -1,0 +1,16 @@
+<script>
+     
+    var frase = prompt("Escriba una frase").toLowerCase().replaceAll(" ","");
+    var cont = 0;
+
+    for (let i = 0; i < frase.length; i++) {
+
+        if (!(frase.charAt(i) == 'i' || frase.charAt(i) == 'u' || frase.charAt(i) == 'a'  || frase.charAt(i) == 'e' || frase.charAt(i) == 'o')) {
+
+            cont++;
+        }
+
+    }
+
+    console.log("La cantidad de consonantes es: " + cont);
+</script>

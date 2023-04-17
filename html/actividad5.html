@@ -1,0 +1,21 @@
+<script>
+
+    var frase = "La ruta nos aporto otro paso natural".toLowerCase().replaceAll(" ","");
+    var esPalindrome = true;
+    var tamano = frase.length/2;
+    for (let i = 0; i < tamano && esPalindrome; i++) {
+        if (frase.charAt(i) != frase.charAt(frase.length - (i+1))) {
+            esPalindrome = false;
+        }
+
+        if (esPalindrome) {
+            console.log ("Es palindrome");
+        }
+        else
+        {
+            console.log ("Es palindrome");
+        }
+    }
+
+
+</script>
