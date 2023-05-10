@@ -1,14 +1,24 @@
 <script>
-    var numero1 = 25;
-    var numero2 = 25;
-    var numero3 = 25;
+    
+    var numeroUno = parseInt(prompt("Dijite el numero uno"));
+    var numeroDos = parseInt(prompt("Dijite el numero dos"));
+    var numeroTres = parseInt(prompt("Dijite el numero tres"));
 
-    if (numero1 > numero2 && numero1 > numero3) {
-        console.log("El número mayor es " + numero1);
-    } else if (numero2 > numero1 && numero2 > numero3) {
-        console.log("El número mayor es " + numero2);
-    } else if (numero3 > numero1 && numero3 > numero2) {
-        console.log("El número mayor es " + numero3);
+    if (numeroUno > numeroDos) {
+
+        if (numeroUno > numeroTres) {
+
+            console.log(" el mayor es " + numeroUno);
+        } else {
+
+            console.log(" el mayor es " + numeroTres);
+        }
+    } else if (numeroDos > numeroTres) {
+
+        console.log(" el mayor es  " + numeroDos);
+    } else {
+
+        console.log(" el mayor es " + numeroTres);
     }
 
 

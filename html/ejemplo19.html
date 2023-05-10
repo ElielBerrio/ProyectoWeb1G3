@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width= device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilos6.css">
+    <script src="../js/utilidades.js"></script>
+    <title>Ejemplo JavaScript</title>
+</head>
+
+<body>
+    <script>
+
+        var h1 = crearElementoConTexto("h1", "Ejemplo JavaScript");
+        var h2 = crearElementoConTexto("h2", "flex");
+
+        var divFlexContenedor = crearElemento("div");
+        // divFlexContenedor.ClassList.add("flexContenedor");
+        divFlexContenedor.setAttribute("class","flexContenedor");
+
+        crearDivHijo("1");
+        crearDivHijo("2");
+        crearDivHijo("3");
+        crearDivHijo("4");
+
+        adicionarBody(h1);
+        adicionarBody(h2);
+        adicionarBody(divFlexContenedor);
+
+        function crearDivHijo(texto) {
+            var divHijoUno = crearElemento("div");
+            var pHijoUno = crearElementoConTexto("p", texto);
+            adicionarHijo(divHijoUno, pHijoUno);
+            adicionarHijo(divFlexContenedor, divHijoUno);
+        }
+
+
+    </script>
+
+
+
+<div class="divSuperior flexContenedorTallerCinco">
+    <img src="../recursos/imagenes/landscape-1192669_640.jpg" alt="" width="25%">
+    <img src="../recursos/imagenes/los-50-paisajes-maravillosos-del-mundo-para-tomar-fotos.jpg" alt="" width="25%">
+    <img src="../recursos/imagenes/paisajes-de-yosemite-46208063.jpg" width="25%" alt="">
+    <img src="../recursos/imagenes/tree-736885_1280.jpg" width="25%" alt="">
+</div>
+
+<div class="flexContenedorTallerCinco divInferior">
+    <div class="divIzquierdoInferior">
+        <img src="../recursos/imagenes/images.jpeg" alt="" width="100%" height="393">
+    </div>
+    <div class="divCentroInferior">
+        <div style="margin: 0;">
+            <img src="../recursos/imagenes/fotografia-de-paisaje-mas-nitida-7-810x540.jpg" alt="ee" width="100%"
+                height="260px">
+        </div>
+        <div style="padding: 0%;">
+            <img src="../recursos/imagenes/istockphoto-1201456158-612x612.jpg" alt="jeje" width="100%"
+                height="129px">
+        </div>
+
+    </div>
+    <div class="divDerechoInferior">
+        <div style="padding-left: 40px; padding-top: 20px;">
+            
+            <h1 style="color: white;">Book a Session</h1>
+            <input type="text" placeholder="ㅤName" style="width: 270px; height: 30px; color: white; background-color: midnightblue; border: solid 2px white;" > <br> <br>
+            <input type="text" placeholder="ㅤEmail address" style="width: 270px; height: 30px; color: white; background-color: midnightblue; border: solid 2px white;"> <br> <br>
+            <textarea name="" id="" cols="30" rows="10" placeholder="ㅤMessage" style="width: 270px; height: 80px; color: white; background-color: midnightblue; border: solid 2px white;"></textarea> <br> <br>
+        </div>
+        <div style="padding-left: 218px;">
+            <input type="submit" value="Send Now" style="text-align: center; width: 100px; height: 35px; color: white; background-color: red;">
+        </div>
+
+    </div>
+</div>
+
+
+</body>
+
+</html>

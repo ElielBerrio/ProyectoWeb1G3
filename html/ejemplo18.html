@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo JS</title>
+    <script src="../js/utilidades.js"></script>
+</head>
+
+<body>
+
+    <script>
+
+        var h1 = crearElementoConTexto("h1", "Tutorial Web");
+        var h2FrontEnd = crearElementoConTexto("h2", "Front End");
+        var h2Noticias = crearElementoConTexto("h2", "Noticias");
+
+
+        var pUno = crearElementoConTexto("p", " Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam ipsam est voluptate ipsa, maiores repellat quas, ratione illo aspernatur consectetur enim quisquam sequi, non quibusdam quod. Ipsum harum deserunt consequuntur.");
+        var imagenUno = crearImagen("../recursos/Imagenes/backend2.png");
+        var pDos = crearElementoConTexto("p", " Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam ipsam est voluptate ipsa, maiores repellat quas, ratione illo aspernatur consectetur enim quisquam sequi, non quibusdam quod. Ipsum harum deserunt consequuntur.");
+        var imagenDos = crearImagen("../recursos/Imagenes/backend3.png");
+        var pTres = crearElementoConTexto("p", " Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam ipsam est voluptate ipsa, maiores repellat quas, ratione illo aspernatur consectetur enim quisquam sequi, non quibusdam quod. Ipsum harum deserunt consequuntur.");
+        var imagenTres = crearImagen("../recursos/Imagenes/backend4.png");
+
+        var ul = crearElemento("ul");
+        var liUno = crearElementoConTexto("li","Framework");
+        var liDos = crearElementoConTexto("li","Librerias");
+        var liTres = crearElementoConTexto("li","Ultimas noticias");
+        adicionarHijo(ul,liUno);
+        adicionarHijo(ul,liDos);
+        adicionarHijo(ul,liTres);
+
+        var fieldset = crearElemento("fieldset");
+        var legend = crearElementoConTexto("legend","BackEnd");
+        adicionarHijo(fieldset,legend);
+
+        var imagenCuatro = crearImagen("../recursos/Imagenes/Front End.png");
+        var pCuatro = crearElementoConTexto("p", " Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam ipsam est voluptate ipsa, maiores repellat quas, ratione illo aspernatur consectetur enim quisquam sequi, non quibusdam quod. Ipsum harum deserunt consequuntur.");
+        var imagenCinco = crearImagen("../recursos/Imagenes/frontend1.png");
+        var pCinco = crearElementoConTexto("p", " Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam ipsam est voluptate ipsa, maiores repellat quas, ratione illo aspernatur consectetur enim quisquam sequi, non quibusdam quod. Ipsum harum deserunt consequuntur.");
+        var imagenSeis = crearImagen("../recursos/Imagenes/frontend2.png");
+        var pSeis = crearElementoConTexto("p", " Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam ipsam est voluptate ipsa, maiores repellat quas, ratione illo aspernatur consectetur enim quisquam sequi, non quibusdam quod. Ipsum harum deserunt consequuntur.");
+        var imagenSiete = crearImagen("../recursos/Imagenes/frontend3.jpeg");
+        var pSiete = crearElementoConTexto("p", " Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam ipsam est voluptate ipsa, maiores repellat quas, ratione illo aspernatur consectetur enim quisquam sequi, non quibusdam quod. Ipsum harum deserunt consequuntur.");
+
+        adicionarHijo(fieldset,imagenCuatro);
+        adicionarHijo(fieldset,pCuatro);
+        adicionarHijo(fieldset,imagenCinco);
+        adicionarHijo(fieldset,pCinco);
+        adicionarHijo(fieldset,imagenSeis);
+        adicionarHijo(fieldset,pSeis);
+        adicionarHijo(fieldset,imagenSiete);
+        adicionarHijo(fieldset,pSiete);
+
+        
+
+        adicionarBody(h1);
+        adicionarBody(h2FrontEnd);
+        adicionarBody(h2Noticias);
+        adicionarBody(pUno);
+        adicionarBody(imagenUno);
+        adicionarBody(pDos);
+        adicionarBody(imagenDos);
+        adicionarBody(pTres);
+        adicionarBody(imagenTres);
+        adicionarBody(ul);
+        adicionarBody(fieldset);
+     
+
+
+
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>
